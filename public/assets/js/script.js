@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event){
     
     if(username == correctUsername && password == correctPassword){
         alert("Login Berhasil")
-        window.location.href = 'home.html';
+        window.location.href = 'index';
 
     }else{
         alert("Username atau password salah")
