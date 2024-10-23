@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <form id="loginForm">
-        <div>
-            <label for="username">Username: </label>
-            <input type="text" name="username" id="username">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <form id="loginForm" class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="mb-4">
+            <label for="username" class="block text-gray-700 font-medium mb-2">Username: </label>
+            <input type="text" name="username" id="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         </div>
-        <div>
-            <label for="password">Password: </label>
-            <input type="text" name="password" id="password">
+        <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-medium mb-2">Password: </label>
+            <input type="text" name="password" id="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         </div>
-        <button type="submit">LOGIN</button>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">LOGIN</button>
     </form>
-
-    <div class="gambar">
-        <img src="assets/images/Museum Nasional, Jakarta 1.png" alt="">
-    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
